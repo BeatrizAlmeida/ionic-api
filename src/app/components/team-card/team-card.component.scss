@@ -1,0 +1,27 @@
+ion-card{
+    text-align: center;
+}
+
+ion-card-header{
+    padding: 15px;
+}
+
+ion-card-title{
+    color: var(--ion-color-tertiary);
+}
+
+ion-list{
+    text-align: left;
+}
+.equipe{
+    color: var(--ion-color-tertiary);
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+img{
+    max-width: 400px;
+    max-height: 230px;
+    margin: auto;
+}
