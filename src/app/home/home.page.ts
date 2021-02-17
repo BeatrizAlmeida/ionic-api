@@ -21,7 +21,6 @@ export class HomePage implements OnInit {
     this.teamService.getTeamsApi().subscribe(
       (response) => {
         this.teams = response;
-        console.log(response);
       }
     );
   }

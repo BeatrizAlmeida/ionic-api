@@ -1,5 +1,5 @@
 ion-menu ion-content {
-  --background: var(--ion-item-background, var(--ion-background-color, #583d72));
+  background-image: url("../assets/background-purple.jpg");
 }
 
 ion-menu.md ion-content {
@@ -14,7 +14,7 @@ ion-menu.md ion-list {
 }
 
 ion-list{
-  background-color: var(--ion-color-primary);
+  background-image: url("../assets/background-purple.jpg");
 }
 
 
@@ -29,7 +29,7 @@ ion-menu.md ion-note {
 
 ion-menu ion-list-header{
   color: var(--ion-color-secondary);
-  background-color: var(--ion-color-primary);
+  background-image: url("../assets/background-purple.jpg");
   margin-bottom: 10px;
 }
 ion-menu.md ion-list-header,
@@ -133,7 +133,6 @@ ion-menu.ios ion-note {
 ion-note {
   display: inline-block;
   font-size: 16px;
-  background: #583d72;
   color: var(--ion-color-primary-contrast);
 }
 
