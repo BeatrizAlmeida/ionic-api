@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+};
+
+export const API = {
+  baseUrl: "https://api.pandascore.co/codmw",
+  apiKey: "6g6g6vJgU-5YKmnS_Z-_Vq4jeyBnwWADlX2fL4Ojpc3jCmIvLBc"
 };
 
 /*

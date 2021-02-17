@@ -1,15 +1,14 @@
 <ion-card>
-  <img src="https://cdn.pandascore.co/images/team/image/128027/los_angeles_thieveslogo_profile.png"/>
+  <img src = "{{team.image_url}}"/>
   <ion-card-header class="header">
-    <ion-card-title>Time: </ion-card-title>
-    <ion-card-subtitle>País de Origem:</ion-card-subtitle>
+    <ion-card-title>{{team.name}} </ion-card-title>
+    <ion-card-subtitle>País de Origem: {{team.location}}</ion-card-subtitle>
   </ion-card-header>
   <ion-list>
     <ion-text class="equipe">Membros da Equipe:</ion-text>
-    <ion-item > Nome do Jogador </ion-item>
-    <ion-item > Nome do Jogador  </ion-item>
-    <ion-item > Nome do Jogador  </ion-item>
-    <ion-item > Nome do Jogador  </ion-item>
-    <ion-item > Nome do Jogador  </ion-item>
+    <div class="items" *ngFor = "let player of team.players">
+      <ion-item > {{player.first_name}} {{player.last_name}} </ion-item>
+    </div>
+    <ion-item *ngIf="!team.players[0]"> <ion-icon name="ban-outline"></ion-icon> Informações privadas pelos jogadores. </ion-item>
   </ion-list> 
 </ion-card>

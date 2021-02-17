@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TeamServiceService } from '../services/team-service.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  public teams = [];
+
+  constructor(public teamService: TeamServiceService) {
+  }
 
   ngOnInit() {
+    this.getListTeams();
+  }
+
+  public getListTeams(){
+    this.teamService.getTeamsApi().subscribe(
+      (response) => {
+        this.teams = response;
+        console.log(response);
+      }
+    );
   }
 
 }
