@@ -31,4 +31,4 @@ npm-debug.log*
 /www
 
 # Environment Variables
-**/src/environments/environment.ts
+**/environment.*
