@@ -1,13 +1,15 @@
 # Api externa em Ionic 
 
+
+
 ## Índice
 
 - [Informações Gerais](#informações-gerais)
 - [Tecnologia](#tecnologia)
-- Setup
-  - Windows
-  - Linux
-- Servir o projeto
+- [Setup](#setup)
+  - [Windows](#windows)
+  - [Linux](#linux)
+- [Servir o projeto](#servir-o-projeto)
 
 ## Informações Gerais
 
@@ -18,5 +20,64 @@ No projeto, que você encontrará neste repositório, temos um aplicativo para o
 
 [ionic](https://ionicframework.com/)
 
-Uma framework para desenvolvimento de aplicações mobile, que utiliza HTML, CSS e JavaScript, permitindo o desenvolvimento multiplataforma.
+Uma framework para desenvolvimento de aplicações mobile que utiliza HTML, CSS e JavaScript, permitindo o desenvolvimento multiplataforma.
+
+## Setup
+
+Antes de servir, você vai precisar ter o ambiente instalado. A seguir estão os passos para o setup no sistema operacional windows e no linux. 
+
+### Windows
+
+#### Instalar o node JS
+
+Entre na página do [node.js](https://nodejs.org/en/download/) e escolha a opção de acordo com as configurações do seu sitema operacional. Execute o arquivo de instalação e siga os seus passos para concluir.
+
+#### Instalar o angular
+
+No seu terminal do git bash, dê o comando:
+
+` npm install -g @angular/cli `
+
+#### Instalar o ionic
+
+Novamente no seu terminal do git bash, dê o comando:
+
+` nnpm install -g ionic `
+
+### Linux
+
+#### Instalar o node js e npm
+
+Você irá precisar instalar os pacotes de nodejs e npm. [Aqui](https://nodejs.org/pt-br/download/package-manager/) você encontra os comandos para diferentes distribuições linux. Para Arch Linux execute o seguinte comando no terminal:
+
+` sudo pacman -S nodejs npm `
+
+#### Instalar o angular
+
+` sudo npm install -g @angular/cli `
+
+#### Instalar o ionic
+
+
+` sudo npm install -g ionic@latest `
+
+
+
+## Servir o projeto
+
+### 1 - Clonar o projeto e instalar dependências
+
+O primeiro passo é clonar este repositório:
+
+` git clone https://github.com/BeatrizAlmeida/ionic-api `
+
+Em seguida, você deve instalar as dependências do projeto
+
+` npm install `
+
+### 2 - Servindo o projeto
+
+Após todas configurações, podemos servir o projeto
+
+` ionic serve `
 
