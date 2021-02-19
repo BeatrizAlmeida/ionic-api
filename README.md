@@ -1,6 +1,6 @@
-# Api externa em Ionic 
+# COD Teams 
 
-
+<div style="text-align:center"> <img src="https://github.com/BeatrizAlmeida/ionic-api/blob/main/src/assets/logoCODTeams.png"> </div>
 
 ## Índice
 
