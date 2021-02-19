@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar mode = "ios">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title><img src="../../assets/logoCODTeams.png" alt="Logo da aplicação"></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="descricao">  
+    <p>O aplicativo para você encontrar os melhores times mundiais de Call Of Duty</p>
+  </ion-card>
+  <div id = "team-container">
+    <app-team-card *ngFor = "let team of teams" [team] = "team" ></app-team-card>
+  </div>
+</ion-content>

@@ -1,0 +1,16 @@
+<ion-card>
+  <ion-card-header class="header">
+    <img src = "{{team.image_url}}"/>
+    <div class="titulos">
+      <ion-card-title>{{team.name}} </ion-card-title>
+      <ion-card-subtitle>País de Origem: {{team.location}}</ion-card-subtitle>
+    </div>
+  </ion-card-header>
+  <ion-list>
+    <ion-text class="equipe">Membros da Equipe:</ion-text>
+    <div class="items" *ngFor = "let player of team.players">
+      <ion-item > {{player.first_name}} - Username {{player.name}} </ion-item>
+    </div>
+    <ion-item *ngIf="!team.players[0]"> <ion-icon name="ban-outline"></ion-icon> Informações não divulgadas. </ion-item>
+  </ion-list> 
+</ion-card>
