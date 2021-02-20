@@ -1,6 +1,6 @@
-# Api externa em Ionic 
+# COD Teams 
 
-
+<div style="text-align:center"> <img src="https://github.com/BeatrizAlmeida/ionic-api/blob/main/src/assets/logoCODTeams.png"> </div>
 
 ## Índice
 
@@ -65,7 +65,7 @@ Você irá precisar instalar os pacotes de nodejs e npm. [Aqui](https://nodejs.o
 
 ## Servir o projeto
 
-### 1 - Clonar o projeto e instalar dependências
+#### 1 - Clonar o projeto e instalar dependências
 
 O primeiro passo é clonar este repositório:
 
@@ -75,7 +75,7 @@ Em seguida, você deve instalar as dependências do projeto
 
 ` npm install `
 
-### 2 - Servindo o projeto
+#### 2 - Servindo o projeto
 
 Após todas configurações, podemos servir o projeto
 
